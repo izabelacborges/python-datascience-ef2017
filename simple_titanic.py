@@ -55,15 +55,14 @@ def simple_heuristic(file_path):
     https://s3.amazonaws.com/content.udacity-data.com/courses/ud359/titanic_data.csv
     '''
 
-    predictions = {}
     df = pandas.read_csv(file_path)
     for passenger_index, passenger in df.iterrows():
         passenger_id = passenger['PassengerId']
-      
+
         # Your code here:
         # For example, let's assume that if the passenger
         # is a male, then the passenger survived.
         #     if passenger['Sex'] == 'male':
         #         predictions[passenger_id] = 1
-        
-    return predictions
+
+    return {}
