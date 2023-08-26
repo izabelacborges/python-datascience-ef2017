@@ -52,7 +52,6 @@ def complex_heuristic(file_path):
     https://s3.amazonaws.com/content.udacity-data.com/courses/ud359/titanic_data.csv
     '''
 
-    predictions = {}
     df = pandas.read_csv(file_path)
     for passenger_index, passenger in df.iterrows():
         passenger_id = passenger['PassengerId']
@@ -63,4 +62,4 @@ def complex_heuristic(file_path):
         #     if passenger['Sex'] == 'male' or passenger['Age'] < 18:
         #         predictions[passenger_id] = 1
         # 
-    return predictions
+    return {}
